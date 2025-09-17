@@ -13,4 +13,12 @@ export const handlers = [
       name: "John Doe",
     });
   }),
+  http.get("https://jsonplaceholder.typicode.com/todos/1", () => {
+    return HttpResponse.json({
+      userId: 1,
+      id: 1,
+      title: "delectus aut autem",
+      completed: false,
+    });
+  }),
 ];
